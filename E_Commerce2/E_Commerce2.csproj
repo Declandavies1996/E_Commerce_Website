@@ -8,6 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Images\boardgame.jpg" />
+    <None Include="wwwroot\Images\coffeemaker.jpg" />
+    <None Include="wwwroot\Images\earbuds.jpg" />
+    <None Include="wwwroot\Images\headphones.jpg" />
+    <None Include="wwwroot\Images\Laptop.jpg" />
+    <None Include="wwwroot\Images\Smartphone.jpg" />
+    <None Include="wwwroot\Images\sneakers.jpg" />
+    <None Include="wwwroot\Images\speaker.jpg" />
+    <None Include="wwwroot\Images\tablet.jpg" />
+    <None Include="wwwroot\Images\tracker.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.20" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.19" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.19" />

@@ -344,6 +344,8 @@ ASALocalRun/
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
 
+/appsettings.json
+
 # MFractors (Xamarin productivity tool) working folder
 .mfractor/
 

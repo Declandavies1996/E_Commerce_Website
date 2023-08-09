@@ -14,5 +14,6 @@ namespace E_Commerce2.Data
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Inventory> Inventory { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }

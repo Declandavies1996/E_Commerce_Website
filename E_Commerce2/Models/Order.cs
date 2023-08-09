@@ -10,7 +10,7 @@ namespace E_Commerce2.Models
         public int OrderId { get; set; }
         [Required]
         [ForeignKey("User")]
-        public int UserId { get; set; }
+        public string Username { get; set; }
         public IdentityUser User { get; set; }
         [Required]
         public string ShippingAddress { get; set; }

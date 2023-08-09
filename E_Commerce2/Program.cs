@@ -1,4 +1,9 @@
+using E_Commerce2.DAL;
 using E_Commerce2.Data;
+using E_Commerce2.Interfaces;
+using E_Commerce2.Models;
+using E_Commerce2.Services;
+using E_Commerce2.UnitOfWorkFolder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +19,15 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+
+builder.Services.AddTransient<IGenericRepository<Product>, GenericRepository<Product>>();
+builder.Services.AddTransient<IProductService, ProductService>();
+
+builder.Services.AddTransient<IGenericRepository<CartItem>, GenericRepository<CartItem>>();
+builder.Services.AddTransient<ICartItemService, CartItemService>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
